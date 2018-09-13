@@ -1,0 +1,93 @@
+{
+  "MenuItems": [
+    {
+      "name": "Home",
+      "subItems": []
+    },
+    {
+      "name": "University",
+      "subItems": [
+        {
+          "name": "Java",
+          "subItems": []
+        },
+        {
+          "name": "Android",
+          "subItems": []
+        },
+        {
+          "name": "Web",
+          "subItems": []
+        },
+        {
+          "name": "C++",
+          "subItems": []
+        },
+        {
+          "name": "Python",
+          "subItems": []
+        },
+        {
+          "name": "Other",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "name": "Dissertation",
+      "subItems": [
+        {
+          "name": "Frontend",
+          "subItems": []
+        },
+        {
+          "name": "Backend",
+          "subItems": []
+        },
+        {
+          "name": "Database",
+          "subItems": []
+        },
+        {
+          "name": "GitHub",
+          "subItems": []
+        },
+        {
+          "name": "Command_Line",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "name": "Oodle_Finance",
+      "subItems": [
+        {
+          "name": "Frontend",
+          "subItems":[]
+        },
+        {
+          "name": "Backend",
+          "subItems":[]
+        }
+      ]
+    },
+    {
+      "name": "Other",
+      "subItems": [
+        {
+          "name": "Hackathon",
+          "subItems": []
+        },
+        {
+          "name": "PC Building",
+          "subItems": []
+        },
+        {
+          "name": "Phone Repair",
+          "subItems": []
+        }
+      ]
+    }
+
+  ]
+}

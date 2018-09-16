@@ -1,0 +1,75 @@
+/*Colours*/
+/*Measurements*/
+/*Tools*/
+.content-container {
+  flex: 1;
+  justify-content: center; }
+
+.content-title {
+  margin: 0;
+  padding: 10vh 0; }
+
+.component-wrapper {
+  display: block; }
+
+.page-block {
+  min-height: 50vh;
+  padding: 100px 50px; }
+
+.page-block p, h3 {
+  text-align: left; }
+
+.page-block p {
+  font-size: 12pt; }
+
+.page-block img {
+  max-width: 300px;
+  max-height: 300px; }
+
+.page-block-text {
+  display: flex;
+  flex: 2; }
+
+.page-ul {
+  text-align: left;
+  font-size: 12pt; }
+
+.page-block-img-container {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  align-items: center;
+  justify-content: center; }
+
+.flex-to-block-container {
+  display: flex;
+  justify-content: center; }
+  @media screen and (max-width: 540px) {
+    .flex-to-block-container {
+      display: block; } }
+
+.block-container {
+  display: block;
+  justify-content: center; }
+  @media screen and (max-width: 540px) {
+    .block-container {
+      display: block; } }
+
+.react-logo {
+  animation: react-logo-spin infinite 20s linear;
+  z-index: -1;
+  height: 80px !important; }
+
+@keyframes react-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.secondary-accent-lighter-bg {
+  background-color: #dadada; }
+
+.secondary-bg {
+  background-color: #245554;
+  color: white; }
+
+/*# sourceMappingURL=PageStyles.css.map */

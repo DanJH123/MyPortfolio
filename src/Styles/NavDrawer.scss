@@ -1,0 +1,72 @@
+@import "./variables";
+
+.App-menu-icon {
+  text-align: left;
+  cursor: pointer;
+}
+.glyphicon.glyphicon-align-justify {
+  font-size: 20pt;
+  transition-duration: $menuCollapseAnimationTime;
+}
+
+.rotate180 {
+  transition-duration: $menuCollapseAnimationTime;
+  transform: rotate(180deg);
+}
+
+.App-menu-container {
+  text-align: left;
+  position: fixed;
+  height: auto;
+  z-index: 1;
+  top: $titleBarHeight;
+  bottom: 0;
+  overflow-y: scroll;
+  box-shadow: 1px 0 5px $primaryAccentColour;
+  transition: width 0.5s ease;
+  width: 175px;
+}
+
+.close-nav-menu{
+  transition: width 0.5s ease;
+  width: 0;
+}
+
+.app-menu-item-container {
+  cursor: pointer;
+  background-color: $primaryAccentColour;
+  color: $primaryColour;
+
+}
+.menu-item:hover {
+  background-color: $primaryColour;
+  color: $primaryAccentColour;
+  border-top: 1px solid $primaryAccentColour;
+  border-bottom: 1px solid $primaryAccentColour;
+  font-weight: bold;
+}
+.menu-item{
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.menu-sub-item{
+  background-color: $secondaryColour;
+  color: $primaryColour;
+  margin: 0;
+  padding: 10px 0 10px 40px;
+}
+
+.menu-sub-item:hover {
+  background-color: $primaryColour;
+  color: $primaryAccentColour;
+  border-top: 1px solid $primaryAccentColour;
+  border-bottom: 1px solid $primaryAccentColour;
+  font-weight: bold;
+}
+
+.selected-menu-item{
+  background-color: $primaryColour;
+  color: $primaryAccentColour;
+  font-weight: bold;
+}

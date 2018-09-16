@@ -1,0 +1,22 @@
+@import "variables";
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primaryAccentColour;
+  opacity: 1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondaryAccentLighter;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: none;
+}

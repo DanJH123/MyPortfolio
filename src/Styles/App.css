@@ -1,0 +1,44 @@
+/*Colours*/
+/*Measurements*/
+/*Tools*/
+@font-face {
+  font-family: titillium;
+  src: url(../Fonts/TitilliumWeb-Regular.ttf); }
+.App {
+  text-align: center;
+  font-family: titillium, "Courier New", sans-serif; }
+
+.App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  display: inline-flex;
+  justify-content: space-between; }
+
+.App-bar-item {
+  flex: 1; }
+
+.App-title {
+  font-size: 20pt;
+  margin: 0; }
+
+.main-content-container {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  margin-top: 51.3px; }
+  @media screen and (max-width: 540px) {
+    .main-content-container {
+      display: block; } }
+
+.footer {
+  padding: 100px;
+  background: black;
+  color: white;
+  width: 100%; }
+
+/*# sourceMappingURL=App.css.map */

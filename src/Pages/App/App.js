@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
 import {MenuButton} from "./Components/MenuButton";
 import {NavigationMenu} from "./Components/NavigationMenu";
+import {PageContent} from "../PageContent";
 import $ from "jquery";
-import './Styles/App.css';
+import '../../Styles/App.css';
+import '../../Styles/NavDrawer.css';
+import '../../Styles/PageStyles.css';
+import '../../Styles/Scrollbar.css';
 
 class App extends Component {
+
+    startPage = {
+        name: "Java",
+        pageKey: "java",
+    };
 
     constructor(){
         super();
         this.toggleMenu = this.toggleMenu.bind(this);
         this.switchPage = this.switchPage.bind(this);
+        this.closeMenu = this.closeMenu.bind(this);
+
+        this.contentContainerRef = React.createRef();
+
         this.state={
-            currentPage: "Home"
+            currentPageObject: this.startPage
         }
     }
 
@@ -23,7 +36,13 @@ class App extends Component {
                     <h1  className="App-bar-item App-title">{App.applyUnderscores("My Portfolio")}</h1>
                     <div className="App-bar-item"/>
                 </header>
-                <NavigationMenu id="open-nav-menu" currentPage={this.state.currentPage} switchPage={this.switchPage}/>
+                <div className="main-content-container" ref={this.contentContainerRef}>
+                    <NavigationMenu id="open-nav-menu"
+                                    currentPageObject={this.state.currentPageObject}
+                                    onClick={this.switchPage}
+                                    toggleMenu={this.toggleMenu}/>
+                    <PageContent className="content-container" closeMenu={this.closeMenu} page={this.state.currentPageObject}/>
+                </div>
                 <footer className="footer">
                     <p>{App.applyUnderscores("Daniel James Hignell")}</p>
                     <p>{App.applyUnderscores("Technology Portfolio")}</p>
@@ -32,12 +51,26 @@ class App extends Component {
         );
     }
 
+    static scrollToRef(ref){
+        // ReactDOM.findDOMNode(ref.current).scrollIntoView();
+        window.scrollTo(0, ref.offsetTop)
+    }
+
     static applyUnderscores(text){
         return text.split(' ').join('_');
     }
 
-    switchPage(pageName){
-        this.setState({ currentPage:pageName })
+    switchPage(pageObject){
+        this.setState({ currentPageObject:pageObject });
+        this.toggleMenu();
+        App.scrollToRef(this.contentContainerRef);
+    }
+
+    closeMenu() {
+        let navMenu = $("#open-nav-menu");
+        if(!navMenu.hasClass("App-menu-container close-nav-menu")){
+            this.toggleMenu();
+        }
     }
 
     toggleMenu(){

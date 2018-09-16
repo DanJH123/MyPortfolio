@@ -1,0 +1,66 @@
+/*Colours*/
+/*Measurements*/
+/*Tools*/
+.App-menu-icon {
+  text-align: left;
+  cursor: pointer; }
+
+.glyphicon.glyphicon-align-justify {
+  font-size: 20pt;
+  transition-duration: 0.5s; }
+
+.rotate180 {
+  transition-duration: 0.5s;
+  transform: rotate(180deg); }
+
+.App-menu-container {
+  text-align: left;
+  position: fixed;
+  height: auto;
+  z-index: 1;
+  top: 51.3px;
+  bottom: 0;
+  overflow-y: scroll;
+  box-shadow: 1px 0 5px black;
+  transition: width 0.5s ease;
+  width: 175px; }
+
+.close-nav-menu {
+  transition: width 0.5s ease;
+  width: 0; }
+
+.app-menu-item-container {
+  cursor: pointer;
+  background-color: black;
+  color: white; }
+
+.menu-item:hover {
+  background-color: white;
+  color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold; }
+
+.menu-item {
+  margin: 0;
+  padding: 10px 20px; }
+
+.menu-sub-item {
+  background-color: #245554;
+  color: white;
+  margin: 0;
+  padding: 10px 0 10px 40px; }
+
+.menu-sub-item:hover {
+  background-color: white;
+  color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold; }
+
+.selected-menu-item {
+  background-color: white;
+  color: black;
+  font-weight: bold; }
+
+/*# sourceMappingURL=NavDrawer.css.map */

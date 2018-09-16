@@ -4,15 +4,24 @@ import $ from "jquery";
 
 export class MenuButton extends Component {
 
+    constructor() {
+        super();
+        this.handleMouseOp = this.handleMouseOp.bind(this);
+    }
+
+
     render() {
         return (
             <div className={this.props.className}
-                 onClick={()=>{
-                     this.rotateMenuIcon();
-                     this.props.toggleMenu();}}>
+                 onClick={ ()=> this.handleMouseOp() }>
                 <Glyphicon glyph="align-justify"/>
             </div>
         )
+    }
+
+    handleMouseOp(){
+        this.rotateMenuIcon();
+        this.props.toggleMenu();
     }
 
     rotateMenuIcon() {

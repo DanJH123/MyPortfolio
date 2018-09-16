@@ -2,88 +2,109 @@
   "MenuItems": [
     {
       "name": "Home",
+      "pageKey": "home",
       "subItems": []
     },
     {
       "name": "University",
+      "pageKey": "university",
       "subItems": [
         {
           "name": "Java",
+          "pageKey": "java",
           "subItems": []
         },
         {
           "name": "Android",
+          "pageKey": "android",
           "subItems": []
         },
         {
           "name": "Web",
+          "pageKey": "web",
           "subItems": []
         },
         {
           "name": "C++",
+          "pageKey": "cPP",
           "subItems": []
         },
         {
           "name": "Python",
+          "pageKey": "python",
           "subItems": []
         },
         {
           "name": "Other",
+          "pageKey": "uOther",
           "subItems": []
         }
       ]
     },
     {
       "name": "Dissertation",
+      "pageKey": "dissertation",
       "subItems": [
         {
           "name": "Frontend",
+          "pageKey": "dFrontend",
           "subItems": []
         },
         {
           "name": "Backend",
+          "pageKey": "dBackend",
           "subItems": []
         },
         {
           "name": "Database",
+          "pageKey": "database",
           "subItems": []
         },
         {
           "name": "GitHub",
+          "pageKey": "gitHub",
           "subItems": []
         },
         {
-          "name": "Command_Line",
+          "name": "Command Line",
+          "pageKey": "commandLine",
           "subItems": []
         }
       ]
     },
     {
-      "name": "Oodle_Finance",
+      "name": "Oodle Finance",
+      "pageKey": "oodleFinance",
       "subItems": [
         {
           "name": "Frontend",
+          "pageKey": "oFrontend",
           "subItems":[]
         },
         {
           "name": "Backend",
+          "pageKey": "oBackend",
           "subItems":[]
         }
       ]
     },
     {
       "name": "Other",
+      "pageKey": "oOther",
       "subItems": [
         {
           "name": "Hackathon",
+          "pageKey": "hackathon",
           "subItems": []
         },
         {
           "name": "PC Building",
+          "pageKey": "pCBuilding",
           "subItems": []
         },
         {
           "name": "Phone Repair",
+          "pageKey": "phoneRepair",
           "subItems": []
         }
       ]

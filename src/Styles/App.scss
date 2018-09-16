@@ -1,0 +1,50 @@
+@import "./variables";
+
+@font-face {
+  font-family: titillium;
+  src: url(../Fonts/TitilliumWeb-Regular.ttf);
+}
+
+.App {
+  text-align: center;
+  font-family: $fontFam;
+}
+
+.App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $primaryAccentColour;
+  padding: 10px;
+  color: $primaryColour;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.App-bar-item {
+  flex: 1;
+}
+
+.App-title {
+  font-size: 20pt;
+  margin: 0;
+}
+
+.main-content-container{
+  width: 100%;
+  display: flex;
+  flex: 1;
+  margin-top: $titleBarHeight;
+  @media screen and (max-width: $phoneWidth) {
+    display: block;
+  }
+}
+
+.footer {
+
+  padding: 100px;
+  background: $primaryAccentColour;
+  color: $primaryColour;
+  width: 100%;
+}

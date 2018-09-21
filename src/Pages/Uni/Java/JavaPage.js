@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
 
+import {IOOPComponent} from "./Components/IOOPComponent";
+import {AOOPComponent} from "./Components/AOOPComponent";
+import {DSComponent} from "./Components/DSComponent";
+import {FOOPComponent} from "./Components/FOOPComponent";
+import {HashTagText} from "../../App/Components/HashTagText";
+
 export class JavaPage extends Component {
+
+    backToTopId = "#JavaTop";
 
     render(){
         return (
-            <div className={"component-wrapper"}>
-                <div className="page-block secondary-accent-lighter-bg">
-                    <h3>Page Contents...</h3>
+            <div className={"component-wrapper"} id="JavaTop">
+                <div className="page-block secondary-bg top-block">
                     <div className="flex-to-block-container">
                         <ul className="page-ul">
-                            <li> <a href="#JavaIntro">Introduction</a> </li>
-                            <li> <a href="#IOOP">Introduction to Object-Oriented Programming</a> </li>
-                            <li> <a href="#FOOP">Further Object-Oriented Programming</a> </li>
-                            <li> <a href="#DS">Data Structures</a> </li>
-                            <li> <a href="#AOOP">Advanced Object-Oriented Programming</a> </li>
+                            <li> <HashTagText href="#JavaIntro" text="Introduction"/> </li>
+                            <li> <HashTagText href="#AOOP" text="Advanced Object-Oriented Programming"/> </li>
+                            <li> <HashTagText href="#DS" text="Data Structures"/> </li>
+                            <li> <HashTagText href="#FOOP" text="Further Object-Oriented Programming"/> </li>
+                            <li> <HashTagText href="#IOOP" text="Introduction to Object-Oriented Programming"/> </li>
                         </ul>
                     </div>
                 </div>
@@ -24,21 +31,18 @@ export class JavaPage extends Component {
                         Android programming). I have descriptions of the work I did in each one along with the grades I
                         received. Use the contents above to skip to a section.
                     </p>
+                    <a href={this.backToTopId}>Back to top</a>
                 </div>
-                <div id="IOOP" className="page-block secondary-bg">
-                    <h3>Introduction to Object Oriented Programming</h3>
-                </div>
-                <div id="FOOP" className="page-block secondary-accent-lighter-bg">
-                    <h3>Further Object Oriented Programming</h3>
-                </div>
-                <div id="DS" className="page-block">
-                    <h3>Data Structures</h3>
-                </div>
-                <div id="AOOP" className="page-block secondary-bg">
-                    <h3>Advanced Object Oriented Programming</h3>
+                <div>
+                <AOOPComponent backToTopId={this.backToTopId} className="page-block secondary-bg"/>
+                <DSComponent   backToTopId={this.backToTopId} className="page-block"/>
+                <FOOPComponent backToTopId={this.backToTopId} className="page-block secondary-bg"/>
+                <IOOPComponent backToTopId={this.backToTopId} className="page-block"/>
                 </div>
             </div>
         )
     }
 
 }
+
+

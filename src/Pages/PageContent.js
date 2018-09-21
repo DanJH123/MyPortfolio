@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {HomePage}       from "./Home/HomePage.js";
 import {UniversityPage} from "./Uni/UniversityPage.js";
 import {JavaPage} from "./Uni/Java/JavaPage";
+import {AndroidPage} from "./Uni/Android/AndroidPage";
 
 export class PageContent extends Component {
 
@@ -19,7 +20,7 @@ export class PageContent extends Component {
         "home":                 <HomePage pageObject={this.props.page}/>,
         "university":           <UniversityPage pageObject={this.props.page}/>,
         "java":                 <JavaPage pageObject={this.props.page}/>,
-        "android": "TBC"        /*(<AndroidPage pageObject={this.props.page}/>)*/,
+        "android":              <AndroidPage pageObject={this.props.page}/>,
         "web": "TBC"            /*(<WebPage pageObject={this.props.page}/>)*/,
         "cPP": "TBC"            /*(<CPPPage pageObject={this.props.page}/>)*/,
         "python": "TBC"         /*(<PythonPage pageObject={this.props.page}/>)*/,

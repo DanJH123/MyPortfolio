@@ -28,12 +28,8 @@
 
 .main-content-container {
   width: 100%;
-  display: flex;
-  flex: 1;
+  display: block;
   margin-top: 51.3px; }
-  @media screen and (max-width: 540px) {
-    .main-content-container {
-      display: block; } }
 
 .footer {
   padding: 100px;

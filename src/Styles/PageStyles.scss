@@ -14,21 +14,31 @@
   display: block;
 }
 
+/*============================== PAGE BLOCK ==============================*/
+
 .page-block {
   min-height: 50vh;
   padding: 100px 50px;
-
 }
 
-.page-block p, h3{
+.page-block p, h3, h4 {
   text-align: left;
+  margin: 0 auto;
+  max-width: $maxContentWidth;
+}
+
+.page-block h4 {
+  margin-top: 30px;
 }
 
 .page-block p {
   font-size: $pFontSize;
+  padding: 10px 0;
 }
 
 .page-block img {
+  display: inline-block;
+  margin: 0 auto;
   max-width: 300px;
   max-height: 300px;
 }
@@ -41,6 +51,16 @@
 .page-ul {
   text-align: left;
   font-size: $pFontSize;
+  padding: 30px 0;
+  list-style: none;
+}
+
+.page-ul li {
+  margin: 10px 0;
+}
+
+.page-ul a{
+  color: $ulLinkColour;
 }
 
 .page-block-img-container {
@@ -54,7 +74,9 @@
 .flex-to-block-container {
   display: flex;
   justify-content: center;
-  @media screen and(max-width: $phoneWidth){
+  max-width: $maxContentWidth;
+  margin: 0 auto;
+  @media screen and(max-width: $phoneWidth) {
     display: block;
   }
 }
@@ -62,25 +84,88 @@
 .block-container {
   display: block;
   justify-content: center;
-  @media screen and(max-width: $phoneWidth){
-    display: block;
+}
+
+/*============================== IMAGE ROW ===========================================*/
+.image-row {
+  width: 100%;
+  max-width: $maxContentWidth;
+  margin: 10px auto;
+  display: -ms-flexbox;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: $secondaryAccentColour;
+  border-radius: 30px 30px 0 0;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $primaryAccentColour;
+    background-clip: content-box;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $secondaryAccentLighter;
+    border-radius: 15px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: none;
   }
 }
 
-.react-logo {
-  animation: react-logo-spin infinite 20s linear;
-  z-index: -1;
-  height: 80px !important;
-}
-@keyframes react-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.small-image-row {
+  height: 400px;
 }
 
-.secondary-accent-lighter-bg {
-  background-color: $secondaryAccentLighter;
+.medium-image-row {
+  height: 450px;
+  overflow-y: auto;
 }
-.secondary-bg {
-  background-color: $secondaryColour;
-  color: white;
+
+.image-row-container {
+  display: inline-flex;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.image-row-container-small {
+  width: 360px;
+  padding: 30px;
+}
+.image-row-container-medium {
+  padding: 30px;
+  max-width: 400px;
+}
+
+.image-row-item {
+  width: 100%;
+}
+
+.image-row p {
+  font-size: 11pt;
+  text-align: center;
+  color: $primaryColour;
+}
+
+.image-small { //TODO
+  width: 300px;
+  height: 240px;
+}
+.image-medium {
+  width: 200px;
+  height: 300px;
+}
+
+.no-images {
+  text-align: center !important;
+  padding: 170px 0 !important;
+  white-space: normal !important;
+  max-width: 100% !important;
 }

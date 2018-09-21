@@ -6,7 +6,7 @@ export class HomePage extends Component {
     render(){
         return (
             <div className={"component-wrapper"}>
-                <div className="page-block secondary-accent-lighter-bg">
+                <div className="page-block secondary-bg top-block">
                     <h3>Welcome to my Technology Portfolio!</h3>
                     <p className="page-block-text">
                         This is a website dedicated to showcasing all the work I have done since I began studying technology

@@ -6,13 +6,15 @@ import $ from "jquery";
 import '../../Styles/App.css';
 import '../../Styles/NavDrawer.css';
 import '../../Styles/PageStyles.css';
+import '../../Styles/Colours.css';
+import '../../Styles/Icons.css';
 import '../../Styles/Scrollbar.css';
 
 class App extends Component {
 
     startPage = {
-        name: "Java",
-        pageKey: "java",
+        name: "Android",
+        pageKey: "android",
     };
 
     constructor(){

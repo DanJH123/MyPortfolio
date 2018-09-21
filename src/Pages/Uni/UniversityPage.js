@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import OBULogo from '../../Images/OBULogo.svg'
-import UniCertificate from '../../Images/uni-certificate.jpg'
+import OBULogo from '../../Images/Uni/OBULogo.svg'
+import UniCertificate from '../../Images/Uni/uni-certificate.jpg'
 export class UniversityPage extends Component {
 
     render(){
         return (
             <div className={"component-wrapper"}>
-                <div className="page-block secondary-accent-lighter-bg">
+                <div className="page-block secondary-bg top-block">
                     <h3>Oxford Brookes University</h3>
                     <div className="flex-to-block-container">
                         <p className="page-block-text">
